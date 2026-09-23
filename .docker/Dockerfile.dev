@@ -1,0 +1,5 @@
+FROM thchzh/ros2:openarm-humble
+
+RUN apt-get update && \
+    apt-get install -y libcli11-dev && \
+    rm -rf /var/lib/apt/lists/*
